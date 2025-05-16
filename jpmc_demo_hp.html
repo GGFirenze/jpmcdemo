@@ -36,7 +36,8 @@
 <script src="https://cdn.amplitude.com/script/3b5e7742eb388b82841258ab5b3160bb.js"></script>
 <script>
 
-  window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+  var sessionReplayTracking = window.sessionReplay.plugin({ sampleRate: 1 });
+  window.amplitude.add(sessionReplayTracking);
   window.amplitude.init('3b5e7742eb388b82841258ab5b3160bb', {"fetchRemoteConfig":true,"autocapture":true});
 
 </script>
