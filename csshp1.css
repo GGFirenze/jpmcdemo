@@ -144,7 +144,7 @@ nav ul li a, .dropdown-toggle {
   justify-content: space-between;
   align-items: center;
   background: #001f1f;
-background: url('/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/image-chase-account.png') no-repeat center/cover;
+background: url('image-chase-account.png') no-repeat center/cover;
   color: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
