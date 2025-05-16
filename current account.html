@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/x-icon.png" type="image/x-icon" />
+  <title>Chase Homepage Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/csshp1.css"/>
+  <meta name="description" content="See what your money can do"><meta name="keywords" content="chase">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.chase.co.uk/gb/en/">
+<meta property="og:title" content="Home">
+<meta property="og:description" content="See what your money can do">
+<meta property="og:url" content="https://www.chase.co.uk/gb/en/">
+<meta property="og:site_name" content="Chase UK">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://static.chase.co.uk/content/dam/chaseweb/gb/en/images/homepage/hero/Homepage-hero-desktop-see-what-your-money-can-do-gb.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@chase_uk">
+<meta name="twitter:creator" content="@chase_uk">
+<meta name="twitter:title" content="Home">
+<meta name="twitter:description" content="See what your money can do">
+<meta name="twitter:image" content="https://static.chase.co.uk/content/dam/chaseweb/gb/en/images/homepage/hero/Homepage-hero-desktop-see-what-your-money-can-do-gb.jpg">
+<link rel="icon" href="/gb/en/favicon.ico" type="image/x-icon" sizes="17x16">
+<link rel="icon" href="/gb/en/icon.png?96b93b8910318692" type="image/png" sizes="180x180">
+<link rel="icon" href="/gb/en/icon2.png?bc9c088a37921383" type="image/png" sizes="33x32">
+<link rel="icon" href="/gb/en/icon3.png?661ad52eecd07429" type="image/png" sizes="17x16">
+<link rel="apple-touch-icon" href="/gb/en/apple-icon.png?96b93b8910318692" type="image/png" sizes="180x180">
+<script src="/gb/en/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule=""></script>
+<link rel="preload" href="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" as="script">
+
+<script src="https://cdn.amplitude.com/script/3b5e7742eb388b82841258ab5b3160bb.js"></script>
+<script>
+
+  window.amplitude.init('3b5e7742eb388b82841258ab5b3160bb', {"fetchRemoteConfig":true,"autocapture":true});
+
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/jpmc_demo_hp.html">
+    <img src="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/Screenshot 2025-05-16 at 13.44.19.png" alt="Logo CHASE" />
+  </a>
+</div>
+
+    <nav>
+      <ul>
+        <li class="dropdown-wrapper">
+          <button class="dropdown-toggle" id="bankingToggle">
+            Banking with us <span id="arrowIcon">▼</span>
+          </button>
+          <div class="dropdown" id="dropdownMenu">
+            <div class="dropdown-column">
+              <span>Spend</span>
+              <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/current account.html">Current account</a>
+            </div>
+            <div class="dropdown-column">
+              <span>Save</span>
+              <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/saveraccount.html">Saver account</a>
+              <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/boosted saver.html">Boosted saver</a>
+            </div>
+            <div class="dropdown-column">
+              <span>Invest</span>
+              <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/nutmeg.html">Invest with Nutmeg</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/jpmc_demo_hp.html">About us</a></li>
+        <li><a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/jpmc_demo_hp.html">The Hub</a></li>
+        <li><a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/jpmc_demo_hp.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+        <section class="section-secondary">
+    <div class="text-block">
+      <br>
+      <br>
+      <br>
+      <br>      
+      <br>
+      <br>
+      <a href="/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/getapp.html">Get the app</a>
+    </div>
+    <div class="image2"></div>
+  </section>
+    <footer>
+    <p>&copy; 2025 Chase - Test for demo only.</p>
+  </footer>
+
+    <script>
+    const toggle = document.getElementById('bankingToggle');
+    const dropdown = document.getElementById('dropdownMenu');
+    const arrow = document.getElementById('arrowIcon');
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle('show');
+      arrow.textContent = dropdown.classList.contains('show') ? '▲' : '▼';
+    });
+
+    document.addEventListener('click', function () {
+      dropdown.classList.remove('show');
+      arrow.textContent = '▼';
+    });
+
+    dropdown.addEventListener('click', e => e.stopPropagation());
+  </script>
+</body>
+</html>

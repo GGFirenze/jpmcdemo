@@ -1,0 +1,212 @@
+:root {
+  --primary-blue: #0046be;
+  --dark-blue: #003b9a;
+  --white: #ffffff;
+  --gray: #f4f4f4;
+  --text-color: #1a1a1a;
+  --font-main: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+header {
+  background-color: var(--white);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a, .dropdown-toggle {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  border-radius: 8px;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.dropdown.show {
+  display: flex;
+  gap: 40px;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.dropdown-column span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dropdown-column a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(90deg, var(--primary-blue), var(--dark-blue));
+  color: white;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-text a {
+  background: white;
+  color: var(--primary-blue);
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.section-secondary {
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #001f1f;
+background: url('/Users/giuliano.giannini/Desktop/Projects/JPMC Demo/nutmeg.png') no-repeat center/cover;
+  color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  flex-wrap: wrap;
+}
+
+.section-secondary .text-block {
+  max-width: 600px;
+}
+
+.section-secondary h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.section-secondary p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.section-secondary a {
+  background: white;
+  color: var(--primary-blue);
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.section-secondary .image {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background: url('[IMMAGINE_URL_QUI]') no-repeat center/cover;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 40px;
+  background: var(--gray);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-secondary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-image, .section-secondary .image {
+    height: 300px;
+  }
+}
