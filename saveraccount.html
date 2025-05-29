@@ -34,12 +34,13 @@
 <link rel="preload" href="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" as="script">
 
 <script src="https://cdn.amplitude.com/script/3b5e7742eb388b82841258ab5b3160bb.js"></script>
+<script src="https://cdn.amplitude.com/script/3b5e7742eb388b82841258ab5b3160bb.engagement.js"></script>
 <script>
 
   var sessionReplayTracking = window.sessionReplay.plugin({ sampleRate: 1 });
   window.amplitude.add(sessionReplayTracking);
   window.amplitude.init('3b5e7742eb388b82841258ab5b3160bb', {"fetchRemoteConfig":true,"autocapture":true});
-
+  window.amplitude.add(window.engagement.plugin();
 </script>
 
 </head>
@@ -76,6 +77,7 @@
         <li><a href="jpmc_demo_hp.html">About us</a></li>
         <li><a href="jpmc_demo_hp.html">The Hub</a></li>
         <li><a href="jpmc_demo_hp.html">Support</a></li>
+        <li><a href="jpmc_demo_hp.html">Sign up!</a></li>
       </ul>
     </nav>
   </header>
